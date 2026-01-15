@@ -19,6 +19,17 @@ export default function Home() {
                     in the meantime!
                 </span>
             </div>
+            <span className="absolute bottom-4 font-bold text-white italic opacity-50 flex">
+                {"curl me".split("").map((letter, i) => (
+                    <span
+                        key={i}
+                        className="animate-bob text-shadow-2xs"
+                        style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                        {letter === " " ? "\u00A0" : letter}
+                    </span>
+                ))}
+            </span>
         </div>
     );
 }

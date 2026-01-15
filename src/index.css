@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@keyframes bob {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+.animate-bob {
+    animation: bob 1.5s ease-in-out infinite;
+}
